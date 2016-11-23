@@ -19,6 +19,10 @@ public class Flight {
         return this.flightNumber;
     }
 
+    public String getDestination(){
+        return this.destination;
+    }
+
 
 
 
