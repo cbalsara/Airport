@@ -32,10 +32,14 @@ public class Flight {
         return this.passengerList.size();
     }
 
+    public void addPassenger(Passenger person) {
+        this.passengerList.add(person);
+    }
+
 //    Return a passenger in the arrayList when we call on their name
-    public Passenger getPassenger(String inputPerson){
+    public Passenger getPassenger(String name){
         for (int i = 0; i < passengerList.size(); i++) {
-            if (this.passengerList.get(i).getName() == inputPerson){
+            if (this.passengerList.get(i).getName() == name){
                 return this.passengerList.get(i);
             }
         }

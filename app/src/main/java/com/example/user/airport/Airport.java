@@ -35,9 +35,9 @@ public class Airport {
 
 
 //    need to first have a get passenger method in the flight class
-//    public Flight getPassanger(String inputedPerson){
+//    public ArrayList getAllPassengers(){
 //
-//        for(int i = 0; i < passengerList.size(); i++){
+//        for(int i = 0; i < flightList.size(); i++){
 //            if
 //        }
 //    }

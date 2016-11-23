@@ -22,16 +22,16 @@ public class FlightTest {
         flight1 = new Flight(4365, "London");
         flight2 = new Flight(3573, "Tokyo");
         passenger1 = new Passenger("Billy", 54, "Economy");
-        passenger2 = new Passenger("Tony", 32, "First"); 
+        passenger2 = new Passenger("Tony", 32, "First");
     }
 
     @Test
-    public void TestFlightNumber(){
+    public void testFlightNumber(){
         assertEquals( 3573, flight2.getFlightNumber() );
     }
 
     @Test
-    public void TestFlightDestination(){
+    public void testFlightDestination(){
         assertEquals( "London", flight1.getDestination() );
     }
 
@@ -40,11 +40,18 @@ public class FlightTest {
         assertEquals( 0, flight1.getSize() );
     }
 
+    @Test
+    public void testAddPassenger(){
+        flight1.addPassenger(passenger1);
+        assertEquals( 1, flight1.getSize() ) ;
+    }
 
-//    @Test
-//    public void TestAddPassengerToFlight(){
-//
-//    }
+    @Test
+    public void testGetPassengerOnFlight(){
+        flight1.addPassenger(passenger1);
+        flight1.addPassenger(passenger2);
+        assertEquals("Tony", flight1.getPassenger("Tony").getName() );
+    }
 
 
 }

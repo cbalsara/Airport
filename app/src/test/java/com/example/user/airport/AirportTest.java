@@ -38,8 +38,9 @@ public class AirportTest {
     public void TestFlightNumber(){
         airport.addFlight(flight1);
         airport.addFlight(flight2);
-        airport.getFlight(3456);
-        assertEquals( 3456, flight1.getFlightNumber() );
+//        airport.getFlight(3456);
+        assertEquals(3456, airport.getFlight(3456).getFlightNumber() );
+//        assertEquals( 3456, flight1.getFlightNumber() );
     }
 
 
