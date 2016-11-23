@@ -28,6 +28,12 @@ public class AirportTest {
         assertEquals( 0, airport.getSize() );
     }
 
+    @Test
+    public void TestAddFlight(){
+        airport.addFlight(flight1);
+        assertEquals( 1, airport.getSize() );
+    }
+
 
 
 }

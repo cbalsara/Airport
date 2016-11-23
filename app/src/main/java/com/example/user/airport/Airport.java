@@ -18,6 +18,10 @@ public class Airport {
         return this.flightList.size();
     }
 
+    public void addFlight( Flight plane){
+        this.flightList.add(plane);
+    }
+
 
 
 
