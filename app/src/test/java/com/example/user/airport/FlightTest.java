@@ -16,6 +16,7 @@ public class FlightTest {
 
 
 
+
     @Before
     public void Before(){
         flight1 = new Flight(4365, "London");

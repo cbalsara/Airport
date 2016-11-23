@@ -23,19 +23,22 @@ public class Airport {
     }
 
     //    figure out how to return something from the arrayList
-    public Flight getFlight(int flightNumber) {
+    public Flight getFlight(int inputedFlightNumber) {
 
         for (int i = 0; i < flightList.size(); i++) {
-            if (this.flightList.get(i).getFlightNumber() == flightNumber){
+            if (this.flightList.get(i).getFlightNumber() == inputedFlightNumber){
                 return this.flightList.get(i);
             }
-
         }
-
         return null;
     }
 
 
     //list me all the passenger names of a particular flight
+
+
+
+
+
 
 }
