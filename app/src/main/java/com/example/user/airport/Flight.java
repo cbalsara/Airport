@@ -5,4 +5,22 @@ package com.example.user.airport;
  */
 
 public class Flight {
+
+    protected int flightNumber;
+    protected String destination;
+
+
+    public Flight(int number, String location){
+        this.flightNumber = number;
+        this.destination = location;
+    }
+
+    
+
+
+
+
+
+
+
 }
