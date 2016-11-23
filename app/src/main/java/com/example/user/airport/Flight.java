@@ -27,6 +27,21 @@ public class Flight {
         return this.destination;
     }
 
+//    show that the passangerList is empty to begin with
+    public int getSize(){
+        return this.passengerList.size();
+    }
+
+//    Return a passenger in the arrayList when we call on their name
+    public Passenger getPassenger(String inputPerson){
+        for (int i = 0; i < passengerList.size(); i++) {
+            if (this.passengerList.get(i).getName() == inputPerson){
+                return this.passengerList.get(i);
+            }
+        }
+        return null;
+    }
+
 
 
 

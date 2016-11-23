@@ -34,6 +34,15 @@ public class Airport {
     }
 
 
+//    need to first have a get passenger method in the flight class
+//    public Flight getPassanger(String inputedPerson){
+//
+//        for(int i = 0; i < passengerList.size(); i++){
+//            if
+//        }
+//    }
+
+
     //list me all the passenger names of a particular flight
 
 
