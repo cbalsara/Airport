@@ -15,7 +15,10 @@ public class Flight {
         this.destination = location;
     }
 
-    
+    public int getFlightNumber(){
+        return this.flightNumber;
+    }
+
 
 
 
