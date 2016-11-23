@@ -16,6 +16,18 @@ public class Passenger {
         this.ticket = ticketType;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public String getTicketType(){
+        return this.ticket;
+    }
+
 
 
 
