@@ -14,6 +14,10 @@ public class Airport {
         this.flightList = new ArrayList<Flight>();
     }
 
+    public int getSize(){
+        return this.flightList.size();
+    }
+
 
 
 

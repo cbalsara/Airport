@@ -11,23 +11,25 @@ import static junit.framework.Assert.assertEquals;
 
 public class FlightTest {
 
-    Flight flight;
+    Flight flight1;
+    Flight flight2;
 
 
 
     @Before
     public void Before(){
-        flight = new Flight(4365, "London");
+        flight1 = new Flight(4365, "London");
+        flight2 = new Flight(3573, "Tokyo");
     }
 
     @Test
     public void TestFlightNumber(){
-        assertEquals( 4365, flight.getFlightNumber() );
+        assertEquals( 3573, flight2.getFlightNumber() );
     }
 
     @Test
     public void TestFlightDestination(){
-        assertEquals( "London", flight.getDestination() );
+        assertEquals( "London", flight1.getDestination() );
     }
 
 
